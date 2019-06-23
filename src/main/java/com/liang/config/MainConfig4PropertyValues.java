@@ -5,5 +5,5 @@ package com.liang.config;
  * @Description:
  * @date: 2019/6/22 18:54
  */
-public class MainConfig04PropertyValues {
+public class MainConfig4PropertyValues {
 }
