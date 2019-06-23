@@ -1,5 +1,7 @@
 package com.liang.service;
 
+import com.liang.mapper.PersonMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -9,4 +11,19 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class PersonService {
+
+    //@Qualifier("personMapper2")
+    @Autowired
+    private PersonMapper personMapper;
+
+    public void print(){
+        System.out.println(personMapper);
+    }
+
+    @Override
+    public String toString() {
+        return "PersonService{" +
+                "personMapper=" + personMapper +
+                '}';
+    }
 }

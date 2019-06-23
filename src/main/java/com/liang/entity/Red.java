@@ -1,20 +1,33 @@
 package com.liang.entity;
 
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.EmbeddedValueResolverAware;
+import org.springframework.stereotype.Component;
+import org.springframework.util.StringValueResolver;
+
 /**
  * @author: Liangxp
- * @Description:
+ * @Description: 自定义组件想要使用Spring容器底层的一些组件,自定义组件实现xxxAware；在创建对象的时候注入
  * @date: 2019/6/22 13:56
  */
-public class Red {
-    public Red() {
-        System.out.println("red……constructor……");
+@Component
+public class Red implements ApplicationContextAware,BeanNameAware,EmbeddedValueResolverAware {
+    private ApplicationContext applicationContext;
+
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        System.out.println("传入的ioc："+applicationContext);
+        this.applicationContext = applicationContext;
     }
 
-    public void init(){
-        System.out.println("red……init……");
+    public void setBeanName(String name) {
+        System.out.println("当前bean的名字："+name);
     }
 
-    public void detory(){
-        System.out.println("red……destory……");
+    public void setEmbeddedValueResolver(StringValueResolver resolver) {
+        String resolveStringValue = resolver.resolveStringValue("你好 ${os.name} 我是 #{20*18}");
+        System.out.println("解析的字符串："+resolveStringValue);
     }
 }

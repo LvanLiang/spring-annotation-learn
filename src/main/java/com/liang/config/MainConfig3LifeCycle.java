@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @author: Liangxp
- * @Description:
+ * @Description: bean生命周期配置
  * @date: 2019/6/22 16:01
  */
 @Configuration
