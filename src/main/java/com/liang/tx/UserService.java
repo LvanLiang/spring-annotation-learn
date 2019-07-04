@@ -18,6 +18,6 @@ public class UserService {
     public void insert(){
         userDao.insert();
         System.out.println("插入完成.....");
-        int a = 20/0;
+        int a = 20/10;
     }
 }
