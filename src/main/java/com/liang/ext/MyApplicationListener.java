@@ -5,7 +5,7 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
 /**
- * @Description: @ Component，@ Repository和@Service注释有什么区别 https://www.javaroad.cn/articles/1693
+ * @Description: @Component，@Repository和@Service注释有什么区别 https://www.javaroad.cn/articles/1693
  * @Author: Liangxp
  * @Date: 2019-07-03 10:20
  */

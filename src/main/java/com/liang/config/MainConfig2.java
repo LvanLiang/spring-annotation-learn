@@ -81,4 +81,25 @@ public class MainConfig2 {
         return new ColorFactoryBean();
     }
 
+    /**
+     * Spring中的@ Component，@ Repository和@Service注释有什么区别？
+     *
+     * @Controller,@Service和@Repository是特殊类型的@Componentannotation.<context:component-scan>并没有错
+     * 并将它们的下一个类注册为bean，就好像它们是用@Component注释一样。它们被扫描，因为它们本身用注释注释为@Component。
+     * 如果我们定义自己的自定义注释并使用@Component进行注释，那么它也将被扫描<context:component-scan>
+     * 1)、@Repository
+     *     这是为了表明该类定义了一个数据存储库。@Repository有什么特别之处？
+     *     除了指出这是一个基于注释的配置之外，@Repository的工作是捕获平台特定的异常，并将它们重新抛出为Spring的统一未经检查的异常之一。
+     *     为此，我们提供了3886827546，我们需要在Spring的应用程序上下文中添加如下：
+     *     <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
+     * 2）、@Controller
+     *     @Controllerannotation指示特定类充当控制器的角色。 The@Controllerannotation充当带注释的类的构造型，指示其角色。
+     *     @Controller有什么特别之处？
+     *     我们无法将此注释与其他任何类似的@Service或@Repository切换，即使它们看起来相同。调度程序扫描用@Controller注释的类，
+     *     并检测其中的@RequestMapping个注释。我们只能使用@RequestMappingon@Controller注释类。
+     * 3)、@Service
+     *     @Services保留存储库层中的业务逻辑和调用方法。@Service有什么特别之处？
+     *     除了它用于表明它持有业务逻辑这一事实之外，这个注释没有明显的特点，但是谁知道，spring可能在未来增加一些额外的特殊功能。
+     */
+
 }
