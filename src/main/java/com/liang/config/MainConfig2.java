@@ -96,7 +96,7 @@ public class MainConfig2 {
      *     @Controllerannotation指示特定类充当控制器的角色。 The@Controllerannotation充当带注释的类的构造型，指示其角色。
      *     @Controller有什么特别之处？
      *     我们无法将此注释与其他任何类似的@Service或@Repository切换，即使它们看起来相同。调度程序扫描用@Controller注释的类，
-     *     并检测其中的@RequestMapping个注释。我们只能使用@RequestMappingon@Controller注释类。
+     *     并检测其中的@RequestMapping个注释。我们只能使用@RequestMapping on @Controller注释类。
      * 3)、@Service
      *     @Services保留存储库层中的业务逻辑和调用方法。@Service有什么特别之处？
      *     除了它用于表明它持有业务逻辑这一事实之外，这个注释没有明显的特点，但是谁知道，spring可能在未来增加一些额外的特殊功能。
