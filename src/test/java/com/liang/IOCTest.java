@@ -51,7 +51,10 @@ public class IOCTest {
         }
 
         Map<String, Person> persons = applicationContext.getBeansOfType(Person.class);
-        System.out.println(persons);
+        persons.forEach((key, value) -> {
+            System.out.println(key + "：" + value);
+        });
+
 
     }
 }

@@ -29,7 +29,7 @@ public class IOCTest_Profile {
         System.out.println(bean);
     }
 
-
+    @Test
     public void test2(){
         AnnotationConfigApplicationContext applicationContext =
                 new AnnotationConfigApplicationContext(MainConfig6Profile.class);

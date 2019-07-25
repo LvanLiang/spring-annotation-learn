@@ -46,7 +46,7 @@ public class MainConfig5Autowired {
      *
      * 3）、 @Autowired:构造器，参数，方法，属性；都是从容器中获取参数组件的值
      * 		1）、[标注在方法位置]：@Bean+方法参数；参数从容器中获取;默认不写@Autowired效果是一样的；都能自动装配
-     * 		2）、[标在构造器上]：如果组件只有一个有参构造器，这个有参构造器的@Autowired可以省略，参数位置的组件还是可以自动从容器中获取
+     * 		2）、[标在构造器上]：如果组件只有一个有参构造器，这个有参构造器的@Autowired可以省略，参数位置的组件还是可以自动从容器中获取 Boss
      * 		3）、放在参数位置：
      *
      * 4）、自定义组件想要使用Spring容器底层的一些组件（ApplicationContext，BeanFactory，xxx）；
@@ -54,6 +54,7 @@ public class MainConfig5Autowired {
      * 		把Spring底层一些组件注入到自定义的Bean中；
      * 		xxxAware：功能使用xxxProcessor；
      * 			ApplicationContextAware==》ApplicationContextAwareProcessor；
+     * 		Red
      * @return
      */
 

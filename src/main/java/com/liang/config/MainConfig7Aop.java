@@ -129,6 +129,10 @@ public class MainConfig7Aop {
      * 			2）、永远返回false
      *
      * 2）、创建对象
+     * initializeBean
+     *      -》wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);
+     *          -》processor.postProcessAfterInitialization(result, beanName);
+     *              -》return wrapIfNecessary(bean, beanName, cacheKey); AbstractAutoProxyCreator类
      * postProcessAfterInitialization；
      * 		return wrapIfNecessary(bean, beanName, cacheKey);//包装如果需要的情况下
      * 		1）、获取当前bean的所有增强器（通知方法）  Object[]  specificInterceptors
