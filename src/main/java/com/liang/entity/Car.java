@@ -3,9 +3,9 @@ package com.liang.entity;
 import org.springframework.stereotype.Component;
 
 /**
- * @author: Liangxp
- * @Description: 用注解的方式，来测试bean的生命周期
- * @date: 2019/6/22 13:47
+ * 用注解的方式，来测试bean的生命周期
+ * @author Liangxp
+ * @date 2019/6/22 13:47
  */
 @Component
 public class Car {

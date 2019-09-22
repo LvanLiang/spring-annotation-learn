@@ -5,10 +5,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
- * @author: Liangxp
- * @Description: bean生命周期配置
- * @date: 2019/6/22 16:01
+ * bean生命周期配置
+ * @author Liangxp
+ * @date 2019/6/22 16:01
  */
 @Configuration
 
@@ -66,5 +69,6 @@ public class MainConfig3LifeCycle {
     public Car car(){
         return new Car("BMW",200000);
     }
+
 
 }

@@ -9,9 +9,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/6/23 14:04
+ * @author Liangxp
+ * @date 2019/6/23 14:04
  */
 @Configuration
 @ComponentScan({"com.liang.controller","com.liang.service","com.liang.mapper","com.liang.entity"})

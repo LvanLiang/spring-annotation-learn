@@ -4,9 +4,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @Description: 扩展原理配置
- * @Author: Liangxp
- * @Date: 2019-07-03 9:22
+ * 扩展原理配置
+ * @author Liangxp
+ * @date 2019-07-03 9:22
  */
 @Configuration
 @ComponentScan("com.liang.ext")

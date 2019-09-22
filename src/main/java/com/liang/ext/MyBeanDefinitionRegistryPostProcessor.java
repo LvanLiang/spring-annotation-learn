@@ -7,9 +7,9 @@ import org.springframework.beans.factory.support.*;
 import org.springframework.stereotype.Component;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/7/4 22:21
+ * @author Liangxp
+ *
+ * @date 2019/7/4 22:21
  */
 @Component
 public class MyBeanDefinitionRegistryPostProcessor implements BeanDefinitionRegistryPostProcessor {

@@ -6,9 +6,9 @@ import org.aspectj.lang.annotation.*;
 import java.util.Arrays;
 
 /**
- * @Description:
- * @Author: Liangxp
- * @Date: 2019-06-24 11:53
+ *
+ * @author Liangxp
+ * @date 2019-06-24 11:53
  */
 @Aspect
 public class LogAspect {

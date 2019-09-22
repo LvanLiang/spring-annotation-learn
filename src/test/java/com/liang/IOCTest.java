@@ -10,9 +10,8 @@ import org.springframework.core.env.ConfigurableEnvironment;
 import java.util.Map;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/6/22 15:13
+ * @author Liangxp
+ * @date 2019/6/22 15:13
  */
 public class IOCTest {
     AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig2.class);

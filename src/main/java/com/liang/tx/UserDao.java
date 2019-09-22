@@ -7,9 +7,8 @@ import org.springframework.stereotype.Repository;
 import java.util.UUID;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/6/27 21:10
+ * @author Liangxp
+ * @date 2019/6/27 21:10
  */
 @Repository
 public class UserDao {

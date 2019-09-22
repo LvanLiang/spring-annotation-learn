@@ -13,9 +13,8 @@ import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/6/27 21:16
+ * @author Liangxp
+ * @date 2019/6/27 21:16
  */
 
 /**

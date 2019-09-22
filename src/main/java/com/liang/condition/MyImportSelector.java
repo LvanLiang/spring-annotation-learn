@@ -6,9 +6,9 @@ import org.springframework.core.type.AnnotationMetadata;
 import java.util.Set;
 
 /**
- * @author: Liangxp
- * @Description: 自定义逻辑返回需要导入的组件
- * @date: 2019/6/22 14:07
+ * 自定义逻辑返回需要导入的组件
+ * @author Liangxp
+ * @date 2019/6/22 14:07
  */
 public class MyImportSelector implements ImportSelector {
     /**
@@ -23,7 +23,7 @@ public class MyImportSelector implements ImportSelector {
             System.out.println(className+"上面的注解-----》"+annotationType);
         }
 
-        //方法不要返回null值
+        // 方法不要返回null值
         return new String[]{"com.liang.entity.Blue","com.liang.entity.Red"};
     }
 }

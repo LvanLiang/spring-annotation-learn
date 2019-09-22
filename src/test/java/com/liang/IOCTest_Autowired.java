@@ -9,9 +9,8 @@ import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/6/23 14:18
+ * @author Liangxp
+ * @date 2019/6/23 14:18
  */
 public class IOCTest_Autowired {
     @Test

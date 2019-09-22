@@ -7,9 +7,8 @@ import org.springframework.context.ApplicationEvent;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * @Description:
- * @Author: Liangxp
- * @Date: 2019-07-03 11:13
+ * @author Liangxp
+ * @date 2019-07-03 11:13
  */
 public class IOCTest_Ext {
     @Test

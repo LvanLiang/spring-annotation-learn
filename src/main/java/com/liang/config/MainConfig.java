@@ -7,9 +7,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 
 /**
- * @author: Liangxp
- * @Description: 配置类==配置文件
- * @date: 2019/6/22 10:32
+ * 配置类==配置文件
+ * @author Liangxp
+ * @date 2019/6/22 10:32
  */
 @Configuration //告诉Spring这是一个配置类
 @ComponentScan(value = "com.liang",includeFilters = {

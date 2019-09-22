@@ -7,9 +7,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /**
- * @Description:
- * @Author: Liangxp
- * @Date: 2019-06-24 14:48
+ * @author Liangxp
+ * @date 2019-06-24 14:48
  */
 @Configuration
 @EnableAspectJAutoProxy
@@ -31,7 +30,7 @@ public class MainConfig7Aop {
      * 4、给切面类的目标方法标注何时何地运行（通知注解）；
      * 5、将切面类和业务逻辑类（目标方法所在类）都加入到容器中;
      * 6、必须告诉Spring哪个类是切面类(给切面类上加一个注解：@Aspect)
-     * [7]、给配置类中加 @EnableAspectJAutoProxy 【开启基于注解的aop模式】
+     * 7、给配置类中加 @EnableAspectJAutoProxy 【开启基于注解的aop模式】
      * 		在Spring中很多的 @EnableXXX;
      *
      *
@@ -45,7 +44,7 @@ public class MainConfig7Aop {
      *                @EnableAspectJAutoProxy；
      * 1、@EnableAspectJAutoProxy是什么？
      * 		@Import(AspectJAutoProxyRegistrar.class)：给容器中导入AspectJAutoProxyRegistrar
-     * 			利用AspectJAutoProxyRegistrar自定义给容器中注册bean；BeanDefinetion
+     * 			利用AspectJAutoProxyRegistrar自定义给容器中注册bean；BeanDefinition
      * 			internalAutoProxyCreator=AnnotationAwareAspectJAutoProxyCreator
      *
      * 		给容器中注册一个AnnotationAwareAspectJAutoProxyCreator；

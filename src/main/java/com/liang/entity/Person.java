@@ -3,9 +3,9 @@ package com.liang.entity;
 import org.springframework.beans.factory.annotation.Value;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/6/22 10:27
+ * @author Liangxp
+ *
+ * @date 2019/6/22 10:27
  */
 public class Person {
     //使用@Value赋值；

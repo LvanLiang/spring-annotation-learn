@@ -5,9 +5,8 @@ import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/6/22 16:04
+ * @author Liangxp
+ * @date 2019/6/22 16:04
  */
 public class IOCTest_LifeCycle {
 

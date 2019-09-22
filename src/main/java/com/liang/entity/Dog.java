@@ -9,9 +9,9 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 /**
- * @author: Liangxp
- * @Description: 使用JSR250中@PostConstruct和@PreDestroy注解来控制bean生命周期
- * @date: 2019/6/22 16:17
+ * @author Liangxp
+ * 使用JSR250中@PostConstruct和@PreDestroy注解来控制bean生命周期
+ * @date 2019/6/22 16:17
  */
 @Component
 public class Dog implements ApplicationContextAware {

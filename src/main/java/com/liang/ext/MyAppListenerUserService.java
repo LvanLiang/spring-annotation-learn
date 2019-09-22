@@ -5,9 +5,9 @@ import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/7/4 22:05
+ * @author Liangxp
+ *
+ * @date 2019/7/4 22:05
  */
 @Service
 public class MyAppListenerUserService {

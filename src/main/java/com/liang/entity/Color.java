@@ -1,9 +1,9 @@
 package com.liang.entity;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/6/22 13:56
+ * @author Liangxp
+ *
+ * @date 2019/6/22 13:56
  */
 public class Color {
     private Car car;

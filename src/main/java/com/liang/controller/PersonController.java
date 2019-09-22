@@ -5,9 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/6/22 10:43
+ * @author Liangxp
+ * @date 2019/6/22 10:43
  */
 @Controller
 public class PersonController {

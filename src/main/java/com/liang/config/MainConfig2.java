@@ -10,11 +10,10 @@ import com.liang.entity.Person;
 import org.springframework.context.annotation.*;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/6/22 11:31
+ * 类中组件统一设置。满足当前条件，这个类中配置的所有bean注册才能生效；
+ * @author Liangxp
+ * @date 2019/6/22 11:31
  */
-//类中组件统一设置。满足当前条件，这个类中配置的所有bean注册才能生效；
 @Conditional({WindowsCondition.class})
 @Configuration
 @Import({Color.class,MyImportSelector.class,MyImportBeanDefinitionRegistrar.class})
@@ -84,7 +83,7 @@ public class MainConfig2 {
     /**
      * Spring中的@ Component，@ Repository和@Service注释有什么区别？
      *
-     * @Controller,@Service和@Repository是特殊类型的@Componentannotation.<context:component-scan>并没有错
+     * @Controller,@Service和@Repository是特殊类型的@Component annotation.<context:component-scan>并没有错
      * 并将它们的下一个类注册为bean，就好像它们是用@Component注释一样。它们被扫描，因为它们本身用注释注释为@Component。
      * 如果我们定义自己的自定义注释并使用@Component进行注释，那么它也将被扫描<context:component-scan>
      * 1)、@Repository
@@ -93,7 +92,7 @@ public class MainConfig2 {
      *     为此，我们提供了3886827546，我们需要在Spring的应用程序上下文中添加如下：
      *     <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
      * 2）、@Controller
-     *     @Controllerannotation指示特定类充当控制器的角色。 The@Controllerannotation充当带注释的类的构造型，指示其角色。
+     *     @Controller annotation指示特定类充当控制器的角色。 The@Controller annotation充当带注释的类的构造型，指示其角色。
      *     @Controller有什么特别之处？
      *     我们无法将此注释与其他任何类似的@Service或@Repository切换，即使它们看起来相同。调度程序扫描用@Controller注释的类，
      *     并检测其中的@RequestMapping个注释。我们只能使用@RequestMapping on @Controller注释类。

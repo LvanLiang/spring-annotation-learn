@@ -11,8 +11,8 @@ import java.io.IOException;
 
 /**
  * 自定义扫描过滤规则
- * @author: Liangxp
- * @date: 2019/6/22 11:10
+ * @author Liangxp
+ * @date 2019/6/22 11:10
  */
 public class MyFilterType implements TypeFilter {
     /**

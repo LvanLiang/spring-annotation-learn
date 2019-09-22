@@ -7,9 +7,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import javax.sql.DataSource;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/6/23 15:57
+ * @author Liangxp
+ * @date 2019/6/23 15:57
  */
 public class IOCTest_Profile {
 

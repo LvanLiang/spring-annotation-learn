@@ -6,9 +6,8 @@ import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * @author: Liangxp
- * @Description:
- * @date: 2019/6/23 13:54
+ * @author Liangxp
+ * @date 2019/6/23 13:54
  */
 public class IOCTest_PropertyValues {
 
